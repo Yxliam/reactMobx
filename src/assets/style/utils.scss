@@ -1,0 +1,45 @@
+/**
+ * 全局样式指令工具库
+ */
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin clearfix() {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+@mixin ell() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin multi($line) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+}
+
+@mixin linethrough() {
+    text-decoration: line-through
+}
+
+@mixin lineheight() {
+    line-height: 1;
+}
+
+
+@mixin fullScreen() {
+    position: absolute;
+    min-height:100%;
+    width:100%;
+}

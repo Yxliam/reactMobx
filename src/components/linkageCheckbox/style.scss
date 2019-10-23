@@ -1,0 +1,24 @@
+.inkage-checkbox {
+  display: flex;
+  margin-top: 20px;
+  .checkbox-p {
+    flex: 1;
+    border: 1px solid #efefef;
+    padding: 10px;
+    box-sizing: border-box;
+    .child {
+      display: flex;
+      .checkbox {
+        flex: 0 0 auto;
+      }
+      .text {
+        flex: 1;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+    }
+  }
+  .checkbox-p + .checkbox-p {
+    margin-left: -1px;
+  }
+}

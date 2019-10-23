@@ -1,0 +1,16 @@
+.login-container {
+    background-color: #f0f2f5;
+    background-image: url(https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg);
+    background-repeat: no-repeat;
+    background-position: center 110px;
+    background-size: 100%;
+    .login-header { text-align: center; padding: 60px 0;
+        img { height: 30px; margin-right: 10px; vertical-align: middle }
+        span { font-size: 30px; font-weight: 700; vertical-align: middle }
+    }
+    .login-footer { position: fixed; bottom: 0; width: 100%; }
+    .login-body { margin: 0 auto; width: 382px; }
+}
+.ant-form-item {
+  margin-top: 30px;
+}

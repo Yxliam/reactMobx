@@ -1,0 +1,150 @@
+.f-tal {
+  text-align: left;
+}
+
+.f-tac {
+  text-align: center;
+}
+
+.f-tar {
+  text-align: right;
+}
+
+.f-fl {
+  float: left;
+}
+
+.f-fr {
+  float: right;
+}
+
+.f-color-link {
+  color: #009fe8;
+  cursor: pointer;
+}
+html, body{
+  background: #eff5f7 !important;
+}
+
+.container {
+  margin: 20px;
+  min-height: 800px;
+  .ant-card {
+    margin-bottom: 24px;
+  }
+  .page-header {
+    margin: -24px -24px 24px;
+  }
+}
+.ant-content{
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+  box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+  border-radius: 4px;
+}
+.ant-layout{
+  background: #eff5f7 !important;
+  .ant-layout-content {
+    height: 100%;
+  }
+}
+
+// @media screen and (max-width: @screen-md) {
+// }
+#siderBar {
+  box-shadow: 2px 0 4px rgba(0, 21, 41, .08);
+}
+
+#header {
+  height: 50px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, .08);
+  z-index: 1;
+  .trigger {
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s;
+    &:hover {
+      color: #1890ff;
+      background: rgba(0, 0, 0, .025);
+    }
+  }
+  .header-tool {
+    text-align: right;
+    padding-right: 10px;
+    >span {
+      line-height: 50px;
+      padding: 0 10px;
+      display: inline-block;
+      cursor: pointer;
+      &:hover {
+        background: rgba(0, 0, 0, .025);
+      }
+      i {
+        padding: 4px;
+      }
+      .ant-avatar {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+#logo {
+  height: 50px;
+  overflow: hidden;
+  background: #353f48;
+  // margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  img {
+    width: 24px;
+    height: auto;
+  }
+  h1 {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #fff;
+    transition: all 1s;
+  }
+}
+
+
+
+.ant-layout-sider-collapsed {
+  #logo {
+    h1 {
+      font-size: 0;
+      display: none;
+    }
+  }
+}
+
+// 创建活动
+.title-1 {
+  display: block;
+  margin: 0 0 5px;
+  font-size: 18px;
+  color: #000 !important;
+}
+.result-bg{
+  background: #fdfdfd !important;
+}
+.region-card {
+  margin-bottom: 32px;
+  .ant-form-item {
+    margin-top: 25px !important;
+  }
+}
+.form-footer{
+  text-align: center;
+}
+.form-bg{
+  border: 1px solid #e8e8e8;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
