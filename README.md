@@ -1,3 +1,1 @@
-# admin-commerce
-
-电商系统前端
+### react+mobx 后台基础框架

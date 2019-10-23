@@ -1,11 +1,7 @@
-/**
- *  @Title   网络请求  没有做接口报错拦截处理
- *  @Auther  Stephen WU
- *  @Des     描述
- *  @Time    2019
- */
 import HttpRequest from './axios'
-import { message } from 'antd';
+import {
+  message
+} from 'antd';
 const axios = new HttpRequest()
 
 // const successCode = 0 // 成功标志
@@ -13,16 +9,20 @@ const axios = new HttpRequest()
 const Ajax = (method, url, params, headers) => {
   return new Promise((resolve, reject) => {
     axios.request({
-      header: headers ? headers : { 'content-type': 'application/json' },
+      header: headers ? headers : {
+        'content-type': 'application/json'
+      },
       url: url,
       method: method,
       data: params
     }).then((res) => {
       if (res.status === 200) {
-        const { data } = res
+        const {
+          data
+        } = res
         resolve(data)
 
-      }else{
+      } else {
         reject(res)
       }
     }).catch((err) => {
