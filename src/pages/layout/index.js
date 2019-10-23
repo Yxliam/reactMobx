@@ -42,16 +42,16 @@ class LayoutPage extends Component {
         >
           <Link to="/">
             <div id="logo">
-              <img src={require("@/assets/images/aimei_logo.png")} />{" "}
-              <h1> ADMINOS </h1>{" "}
-            </div>{" "}
-          </Link>{" "}
+              <img src={require("@/assets/images/aimei_logo.png")} />
+              <h1> ADMINOS </h1>
+            </div>
+          </Link>
           <Scrollbars autoHide>
             <NavMenu />
-          </Scrollbars>{" "}
-        </Sider>{" "}
-        {/* <Layout style={ { marginLeft: this.props.hasCloseSider ? 80 : 200, height: '100vh', overflow: 'auto', transition: 'margin-left .2s' } }> */}{" "}
-        {/* 删除height: '100vh', overflow: 'auto', 因为会导致拿到的滚动距离不正确 */}{" "}
+          </Scrollbars>
+        </Sider>
+        {/* <Layout style={ { marginLeft: this.props.hasCloseSider ? 80 : 200, height: '100vh', overflow: 'auto', transition: 'margin-left .2s' } }> */}
+        {/* 删除height: '100vh', overflow: 'auto', 因为会导致拿到的滚动距离不正确 */}
         <Layout
           style={{
             marginLeft: this.props.hasCloseSider ? 80 : 200,
@@ -67,7 +67,6 @@ class LayoutPage extends Component {
               background: "#fff"
             }}
           >
-            {" "}
             {this.props.routes ? (
               this.props.routes.map((route, key) => {
                 return (
@@ -83,10 +82,10 @@ class LayoutPage extends Component {
               })
             ) : (
               <Home />
-            )}{" "}
-          </Content>{" "}
+            )}
+          </Content>
           {/* <FootBar /> */}
-        </Layout>{" "}
+        </Layout>
       </Layout>
     );
   }

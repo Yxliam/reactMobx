@@ -13,14 +13,13 @@ class App extends Component {
     if (!this.props.loginFlag) {
       return (
         <Router>
-          <Route exact component={Login} />{" "}
+          <Route exact component={Login} />
         </Router>
       );
     }
     return (
       <Router>
         <Fragment>
-          {" "}
           {routesConfig.map((route, key) => {
             return (
               <Route
@@ -32,8 +31,8 @@ class App extends Component {
                 )}
               />
             );
-          })}{" "}
-        </Fragment>{" "}
+          })}
+        </Fragment>
       </Router>
     );
   }
