@@ -12,10 +12,16 @@ const Layout = loadComponent(() => import('@/pages/layout' /* webpackChunkName: 
 const LayoutSimple = loadComponent(() => import('@/pages/layout/simple' /* webpackChunkName: "LayoutSimple" */ ));
 const Home = loadComponent(() => import('@/pages/home' /* webpackChunkName: "Home" */ ));
 
+const Test = loadComponent(() => import('@/pages/test' /* webpackChunkName: "Test" */ ));
+
 /*嵌套路由*/
 let routes = [{
   path: "/",
   component: Home,
+  exact: true
+}, {
+  path: "/test",
+  component: Test,
   exact: true
 }];
 
